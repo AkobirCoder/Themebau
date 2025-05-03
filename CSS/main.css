@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+/* Root styles */
+:root {
+    --Inter: "Inter", sans-serif;
+    --light: #ffffff;
+    --dark: #0E0E0E;
+    --darkShadow: #575757;
+}
+
+/* Global styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--Inter);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    line-height: 1.4;
+    color: var(--dark);
+    transition: all 0.5s ease;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1336px;
+    padding: 0 1.2rem;
+}
+
+img {
+    width: 100%;
+    display: block;
+}
+
+/* Header section styles */
+.headerSection {
+    height: 80vh;
+    background: var(--dark);
+}
+
+.headerSection .navbar {
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    position: fixed;
+    padding: 2rem 6rem;
+    transition: all 0.4s ease;
+    backdrop-filter: blur(0.5rem);
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.headerSection .navbar:hover {
+    box-shadow: 0 0 0.8rem var(--darkShadow);
+}
+
+.navbar .navbarMenu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbarMenu .navbarMenuLogo a {
+    padding: 0 1rem;
+    font-weight: 500;
+    font-size: 1.2rem;
+    color: var(--light);
+    text-decoration: none;
+    font-family: var(--Inter);
+}
+
+.navigationMenu {
+    width: 45%;
+    display: flex;
+    padding: 0 1rem;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navigationMenu .navigationMenuItems,
+.navigationMenu .socialNetworkItems {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+
+.navigationMenuItems .navigationMenuItem {
+    margin: 0 1rem;
+}
+
+.socialNetworkItems .socialNetworkItem {
+    margin-left: 1.5rem;
+}
+
+.navigationMenuItem a,
+.socialNetworkItem a {
+    color: var(--light);
+    text-decoration: none;
+    font-family: var(--Inter);
+    transition: all 0.3s ease;
+}
+
+.navigationMenuItem a:hover,
+.socialNetworkItem a:hover {
+    opacity: 0.7;
+}
+
+.navigationMenuItem a {
+    padding: 0 0.5rem;
+}
